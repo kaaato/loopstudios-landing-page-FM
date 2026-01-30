@@ -1,0 +1,27 @@
+@use '../utils/' as u;
+
+.footer {
+  background-color: var(--color-dark);
+  padding-block: 3.5rem;
+
+  &-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  @include u.breakpoint(medium) {
+    padding-block: 45px;
+  }
+
+  @include u.breakpoint(ex-large) {
+    &-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 69.5rem;
+      margin-inline: auto; 
+    }
+  }
+}
+
+

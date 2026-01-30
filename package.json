@@ -1,0 +1,14 @@
+{
+  "name": "loopstudios-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css -w"
+  },
+  "author": "kaaato",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}

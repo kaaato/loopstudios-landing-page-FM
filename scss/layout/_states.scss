@@ -1,0 +1,44 @@
+@use '../utils/' as u;
+
+.menu--mobile-active {
+  display: block;
+  position: fixed;
+  inset: 0;
+  padding-top: 1rem;
+
+  & .mm-wrapper {
+    padding: 1.5rem;
+    gap: 10rem;
+  }
+
+  & .mm-header {
+    display: block;
+
+    &-wrapper {
+      justify-content: space-between;
+    }
+  }
+
+  & .mm-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+}
+
+:is(.link--menu, .link--social):hover::before {
+  display: inline-block;
+}
+
+.link--product:hover {
+  color: var(--color-off-white);
+  background-color: var(--color-dark);
+}
+
+.vr-link:hover {
+  filter: opacity(0.5);
+}
+
+.vr:hover .vr-title {
+  color: var(--color-dark);
+}

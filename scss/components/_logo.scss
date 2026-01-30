@@ -1,0 +1,18 @@
+@use '../utils/' as u;
+
+.logo {
+  max-width: 9rem;
+}
+
+.logo--main {
+  @include u.breakpoint(ex-large) {
+    max-width: 12rem;
+  }
+}
+
+.logo--footer {
+  margin-inline: auto;
+  @include u.breakpoint(ex-large) {
+    margin-inline: initial;
+  }
+}

@@ -1,0 +1,25 @@
+@use '../utils/' as u;
+
+.link--product {
+  border: 1px solid var(--color-dark);
+  padding: 0.5rem 2.5rem;
+}
+
+:is(.link--menu, .link--social)::before {
+  content: "";
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: solid;
+}
+
+.link--menu::before {
+  width: 50%;
+}
+
+.link--social::before {
+  width: 100%;
+}

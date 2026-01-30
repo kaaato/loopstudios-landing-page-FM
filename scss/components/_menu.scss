@@ -1,0 +1,36 @@
+@use '../utils/' as u;
+
+.menu--header {
+  display: none;
+
+  &-header {
+    display: none;
+  }
+  
+  &-list {
+    gap: 30px;
+  }
+  
+  @include u.breakpoint(medium) {
+    display: block;
+  }
+}
+
+.menu--footer {
+  margin-top: 2rem;
+
+  &-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  @include u.breakpoint(medium) {
+    
+    &-list {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+}
+

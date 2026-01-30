@@ -1,0 +1,17 @@
+@use '../utils/' as u;
+
+.header {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding-inline: 1.5rem;
+  z-index: 10;
+
+  @include u.breakpoint(large) {
+    margin-top: 4rem;
+  }
+}
+
+.header-nav {
+  max-width: 69.5rem;
+  margin-inline: auto;
+}

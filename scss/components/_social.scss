@@ -1,0 +1,19 @@
+@use '../utils/' as u;
+
+.social-media-list {
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  @include u.breakpoint(ex-large) {
+    justify-content: end;
+  }
+}
+
+.copyright {
+  margin-top: 1rem;
+
+  @include u.breakpoint(ex-large) {
+    margin-top: 2rem;
+  }
+}

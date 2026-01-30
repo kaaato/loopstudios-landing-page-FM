@@ -1,0 +1,11 @@
+@use '../utils/' as u;
+
+.button--open {
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+}
+
+.button--close {
+  padding-inline: 3px;
+}

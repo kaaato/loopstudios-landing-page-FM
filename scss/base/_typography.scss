@@ -1,0 +1,108 @@
+@use '../utils/' as u;
+
+.page {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  background-color: var(--color-off-white);
+  color: var(--color-dark);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.menu--header {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: var(--color-off-white);
+}
+
+.hero {
+  background-color: var(--color-dark);
+  color: var(--color-off-white);
+  font-size: 2.5rem;
+  line-height: 1;
+
+  @include u.breakpoint(ex-large) {
+    font-size: 4.5rem;
+  }
+}
+
+.intro {
+  &-title {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  &-text {
+    font-family: "Alata", sans-serif;
+    color: var(--color-medium);
+    font-size: 0.9375rem;
+    font-weight: 400;
+  }
+
+  @include u.breakpoint(large) {
+    &-title {
+      font-size: 2.5rem;
+    }
+  }
+
+  @include u.breakpoint(ex-large) {
+    &-title {
+      font-size: 2.875rem;
+    }
+  }
+}
+
+.product-title {
+  font-weight: 300;
+  font-size: 2rem;
+
+  @include u.breakpoint(large) {
+    font-size: 2.5rem;
+  }
+
+  @include u.breakpoint(ex-large) {
+    font-size: 3rem;
+  }
+}
+
+.vr {
+  font-size: 1.5rem;
+  color: var(--color-off-white);
+  line-height: 1;
+
+  @include u.breakpoint(large) {
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: var(--color-off-white);
+}
+
+.copyright {
+  color: var(--color-medium);
+}
+
+.link--product {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-size: 1.0625rem;
+}
+
+.menu--mobile-active {
+  background-color: var(--color-dark);
+
+  & .mm-list {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+  }
+}
